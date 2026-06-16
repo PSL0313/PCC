@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+
+# Xcode user state
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+
+# Xcode build products
+DerivedData/
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+
+# CocoaPods / Carthage generated files
+Pods/
+Carthage/Build/
+
+# Secrets / local app config
+GoogleService-Info.plist
+*.p8
+*.mobileprovision
+*.cer
+*.certSigningRequest
+
+# Local downloads and reference materials
+PCC/Downloads/
+PCC/App/Downloads/

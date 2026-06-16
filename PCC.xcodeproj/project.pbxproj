@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABCD10032FA9B00100000003 /* OpenCV in Frameworks */ = {isa = PBXBuildFile; productRef = ABCD10022FA9B00100000002 /* OpenCV */; };
+		CC1291D32FA8CD8700211AB6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CC1291D22FA8CD8700211AB6 /* SnapKit */; };
+		CC38612D2FDBEC5400D88B60 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CCF03E6F2FDBDC3100C0FD89 /* FirebaseAnalytics */; };
+		CC38612E2FDBEC5400D88B60 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = CCF03E712FDBDC3100C0FD89 /* FirebaseCrashlytics */; };
+		CC38612F2FDBEC5400D88B60 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = CCF03E732FDBDC3100C0FD89 /* FirebaseRemoteConfig */; };
+		CCE2A9522FDBEC46003C56CB /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = CCE2A9512FDBEC46003C56CB /* FirebaseCore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCE593D32FA44EB5009452A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCE593B12FA44EB4009452A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCE593B82FA44EB4009452A1;
+			remoteInfo = PCC;
+		};
+		CCE593DD2FA44EB5009452A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCE593B12FA44EB4009452A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCE593B82FA44EB4009452A1;
+			remoteInfo = PCC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CCE593B92FA44EB4009452A1 /* PCC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PCC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE593D22FA44EB5009452A1 /* PCCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PCCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE593DC2FA44EB5009452A1 /* PCCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PCCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CCE593E42FA44EB5009452A1 /* Exceptions for "PCC" folder in "PCC" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CCE593B82FA44EB4009452A1 /* PCC */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CCE593BB2FA44EB4009452A1 /* PCC */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CCE593E42FA44EB5009452A1 /* Exceptions for "PCC" folder in "PCC" target */,
+			);
+			path = PCC;
+			sourceTree = "<group>";
+		};
+		CCE593D52FA44EB5009452A1 /* PCCTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PCCTests;
+			sourceTree = "<group>";
+		};
+		CCE593DF2FA44EB5009452A1 /* PCCUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PCCUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCE593B62FA44EB4009452A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC38612F2FDBEC5400D88B60 /* FirebaseRemoteConfig in Frameworks */,
+				CC38612E2FDBEC5400D88B60 /* FirebaseCrashlytics in Frameworks */,
+				CC38612D2FDBEC5400D88B60 /* FirebaseAnalytics in Frameworks */,
+				CCE2A9522FDBEC46003C56CB /* FirebaseCore in Frameworks */,
+				CC1291D32FA8CD8700211AB6 /* SnapKit in Frameworks */,
+				ABCD10032FA9B00100000003 /* OpenCV in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE593CF2FA44EB5009452A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE593D92FA44EB5009452A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC3866EC2FDBED7A00D88B60 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC3866F02FDBED7A00D88B60 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC3870532FDBED7D00D88B60 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC3870A12FDBED7D00D88B60 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCAD58922FDBEE00000817DD /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCAD58942FDBEE00000817DD /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCE2A94C2FDBE82C003C56CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCE593B02FA44EB4009452A1 = {
+			isa = PBXGroup;
+			children = (
+				CCE593BB2FA44EB4009452A1 /* PCC */,
+				CCE593D52FA44EB5009452A1 /* PCCTests */,
+				CCE593DF2FA44EB5009452A1 /* PCCUITests */,
+				CCE2A94C2FDBE82C003C56CB /* Frameworks */,
+				CCE593BA2FA44EB4009452A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCE593BA2FA44EB4009452A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCE593B92FA44EB4009452A1 /* PCC.app */,
+				CCE593D22FA44EB5009452A1 /* PCCTests.xctest */,
+				CCE593DC2FA44EB5009452A1 /* PCCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCE593B82FA44EB4009452A1 /* PCC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCE593E52FA44EB5009452A1 /* Build configuration list for PBXNativeTarget "PCC" */;
+			buildPhases = (
+				CCE593B52FA44EB4009452A1 /* Sources */,
+				CCE593B62FA44EB4009452A1 /* Frameworks */,
+				CCE593B72FA44EB4009452A1 /* Resources */,
+				CC3861BC2FDBEC6600D88B60 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CCE593BB2FA44EB4009452A1 /* PCC */,
+			);
+			name = PCC;
+			packageProductDependencies = (
+				CC1291D22FA8CD8700211AB6 /* SnapKit */,
+				ABCD10022FA9B00100000002 /* OpenCV */,
+				CCF03E6F2FDBDC3100C0FD89 /* FirebaseAnalytics */,
+				CCF03E712FDBDC3100C0FD89 /* FirebaseCrashlytics */,
+				CCF03E732FDBDC3100C0FD89 /* FirebaseRemoteConfig */,
+				CCE2A9512FDBEC46003C56CB /* FirebaseCore */,
+			);
+			productName = PCC;
+			productReference = CCE593B92FA44EB4009452A1 /* PCC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCE593D12FA44EB5009452A1 /* PCCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCE593EA2FA44EB5009452A1 /* Build configuration list for PBXNativeTarget "PCCTests" */;
+			buildPhases = (
+				CCE593CE2FA44EB5009452A1 /* Sources */,
+				CCE593CF2FA44EB5009452A1 /* Frameworks */,
+				CCE593D02FA44EB5009452A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCE593D42FA44EB5009452A1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CCE593D52FA44EB5009452A1 /* PCCTests */,
+			);
+			name = PCCTests;
+			packageProductDependencies = (
+			);
+			productName = PCCTests;
+			productReference = CCE593D22FA44EB5009452A1 /* PCCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CCE593DB2FA44EB5009452A1 /* PCCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCE593ED2FA44EB5009452A1 /* Build configuration list for PBXNativeTarget "PCCUITests" */;
+			buildPhases = (
+				CCE593D82FA44EB5009452A1 /* Sources */,
+				CCE593D92FA44EB5009452A1 /* Frameworks */,
+				CCE593DA2FA44EB5009452A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCE593DE2FA44EB5009452A1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CCE593DF2FA44EB5009452A1 /* PCCUITests */,
+			);
+			name = PCCUITests;
+			packageProductDependencies = (
+			);
+			productName = PCCUITests;
+			productReference = CCE593DC2FA44EB5009452A1 /* PCCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCE593B12FA44EB4009452A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					CCE593B82FA44EB4009452A1 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					CCE593D12FA44EB5009452A1 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = CCE593B82FA44EB4009452A1;
+					};
+					CCE593DB2FA44EB5009452A1 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = CCE593B82FA44EB4009452A1;
+					};
+				};
+			};
+			buildConfigurationList = CCE593B42FA44EB4009452A1 /* Build configuration list for PBXProject "PCC" */;
+			developmentRegion = ko;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ja,
+				ko,
+				Base,
+			);
+			mainGroup = CCE593B02FA44EB4009452A1;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CC1291D12FA8CD8700211AB6 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				ABCD10012FA9B00100000001 /* XCRemoteSwiftPackageReference "opencv-spm" */,
+				CCF03E6E2FDBDC3100C0FD89 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CCE593BA2FA44EB4009452A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCE593B82FA44EB4009452A1 /* PCC */,
+				CCE593D12FA44EB5009452A1 /* PCCTests */,
+				CCE593DB2FA44EB5009452A1 /* PCCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCE593B72FA44EB4009452A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE593D02FA44EB5009452A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE593DA2FA44EB5009452A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CC3861BC2FDBEC6600D88B60 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}.debug.dylib",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCE593B52FA44EB4009452A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE593CE2FA44EB5009452A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE593D82FA44EB5009452A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCE593D42FA44EB5009452A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCE593B82FA44EB4009452A1 /* PCC */;
+			targetProxy = CCE593D32FA44EB5009452A1 /* PBXContainerItemProxy */;
+		};
+		CCE593DE2FA44EB5009452A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCE593B82FA44EB4009452A1 /* PCC */;
+			targetProxy = CCE593DD2FA44EB5009452A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CCE593E62FA44EB5009452A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 8JYJ5G29NY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PCC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PCC;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access is needed to take photocard photos and add them to your binders.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seonlin.PCC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PCC/PCC-Bridging-Header.h";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_UPCOMING_FEATURE_REGION_BASED_ISOLATION = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CCE593E72FA44EB5009452A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 8JYJ5G29NY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PCC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PCC;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access is needed to take photocard photos and add them to your binders.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seonlin.PCC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PCC/PCC-Bridging-Header.h";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_UPCOMING_FEATURE_REGION_BASED_ISOLATION = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CCE593E82FA44EB5009452A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 8JYJ5G29NY;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCE593E92FA44EB5009452A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 8JYJ5G29NY;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCE593EB2FA44EB5009452A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8JYJ5G29NY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seonlin.PCCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PCC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PCC";
+			};
+			name = Debug;
+		};
+		CCE593EC2FA44EB5009452A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8JYJ5G29NY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seonlin.PCCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PCC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PCC";
+			};
+			name = Release;
+		};
+		CCE593EE2FA44EB5009452A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8JYJ5G29NY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seonlin.PCCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PCC;
+			};
+			name = Debug;
+		};
+		CCE593EF2FA44EB5009452A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8JYJ5G29NY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seonlin.PCCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PCC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCE593B42FA44EB4009452A1 /* Build configuration list for PBXProject "PCC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE593E82FA44EB5009452A1 /* Debug */,
+				CCE593E92FA44EB5009452A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCE593E52FA44EB5009452A1 /* Build configuration list for PBXNativeTarget "PCC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE593E62FA44EB5009452A1 /* Debug */,
+				CCE593E72FA44EB5009452A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCE593EA2FA44EB5009452A1 /* Build configuration list for PBXNativeTarget "PCCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE593EB2FA44EB5009452A1 /* Debug */,
+				CCE593EC2FA44EB5009452A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCE593ED2FA44EB5009452A1 /* Build configuration list for PBXNativeTarget "PCCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE593EE2FA44EB5009452A1 /* Debug */,
+				CCE593EF2FA44EB5009452A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ABCD10012FA9B00100000001 /* XCRemoteSwiftPackageReference "opencv-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yeatse/opencv-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.13.0;
+			};
+		};
+		CC1291D12FA8CD8700211AB6 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		CCF03E6E2FDBDC3100C0FD89 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ABCD10022FA9B00100000002 /* OpenCV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABCD10012FA9B00100000001 /* XCRemoteSwiftPackageReference "opencv-spm" */;
+			productName = OpenCV;
+		};
+		CC1291D22FA8CD8700211AB6 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC1291D12FA8CD8700211AB6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		CCE2A9512FDBEC46003C56CB /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCF03E6E2FDBDC3100C0FD89 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		CCF03E6F2FDBDC3100C0FD89 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCF03E6E2FDBDC3100C0FD89 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		CCF03E712FDBDC3100C0FD89 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCF03E6E2FDBDC3100C0FD89 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		CCF03E732FDBDC3100C0FD89 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCF03E6E2FDBDC3100C0FD89 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CCE593B12FA44EB4009452A1 /* Project object */;
+}
