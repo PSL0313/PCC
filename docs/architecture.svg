@@ -1,0 +1,122 @@
+<svg width="1200" height="820" viewBox="0 0 1200 820" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">PCC Architecture</title>
+  <desc id="desc">PCC architecture diagram with Presentation, Domain, Data layers, DIContainer, Coordinator, MVVM, UseCase, Repository Protocol, Repository implementation, DataSource, and Image Processor.</desc>
+  <defs>
+    <marker id="arrow-white" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2 2L10 6L2 10" fill="none" stroke="#F8FAFC" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrow-gray" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2 2L10 6L2 10" fill="none" stroke="#CBD5E1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2 2L10 6L2 10" fill="none" stroke="#7DD956" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.32"/>
+    </filter>
+    <style>
+      .title { font: 800 48px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #FFFFFF; }
+      .subtitle { font: 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #CBD5E1; }
+      .layer-label { font: 800 20px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .box-text { font: 800 20px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #050505; }
+      .small-text { font: 700 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #E2E8F0; }
+      .legend { font: 700 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #CBD5E1; }
+      .note { font: 700 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #FFFFFF; }
+      .data-label { fill: #FACC15; }
+      .domain-label { fill: #38BDF8; }
+      .presentation-label { fill: #7DD956; }
+      .layer { stroke-width: 2; filter: url(#soft-shadow); }
+      .data-layer { fill: #2B2508; stroke: #3D3512; }
+      .domain-layer { fill: #071C2D; stroke: #0F3656; }
+      .presentation-layer { fill: #0C260B; stroke: #174617; }
+      .box { filter: url(#soft-shadow); }
+      .data-box { fill: #F8C83D; }
+      .domain-box { fill: #4EA3F1; }
+      .presentation-box { fill: #56B938; }
+      .di-box { fill: #C23882; }
+      .external-box { fill: #A78BFA; }
+      .arrow { stroke: #F8FAFC; stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow-white); }
+      .dependency { stroke: #CBD5E1; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 6 7; marker-end: url(#arrow-gray); }
+      .up-flow { stroke: #7DD956; stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow-green); }
+      .bidirectional { stroke: #F8FAFC; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; marker-start: url(#arrow-white); marker-end: url(#arrow-white); }
+      .soft-line { stroke: #CBD5E1; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 5 6; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="820" fill="#020617"/>
+  <text x="600" y="82" text-anchor="middle" class="title">PCC Architecture</text>
+  <text x="600" y="112" text-anchor="middle" class="subtitle">Coordinator + MVVM + DIContainer + Domain Repository Protocol</text>
+
+  <rect x="760" y="132" width="220" height="58" rx="12" class="box di-box"/>
+  <text x="870" y="168" text-anchor="middle" class="box-text">DIContainer</text>
+
+  <rect x="135" y="225" width="930" height="190" rx="36" class="layer data-layer"/>
+  <text x="95" y="312" text-anchor="end" class="layer-label data-label">Data</text>
+
+  <rect x="190" y="280" width="220" height="58" rx="12" class="box data-box"/>
+  <text x="300" y="316" text-anchor="middle" class="box-text">Repository Impl</text>
+
+  <rect x="525" y="250" width="230" height="58" rx="12" class="box data-box"/>
+  <text x="640" y="286" text-anchor="middle" class="box-text">DataSource</text>
+
+  <rect x="525" y="333" width="230" height="58" rx="12" class="box data-box"/>
+  <text x="640" y="369" text-anchor="middle" class="box-text">Image Storage</text>
+
+  <rect x="835" y="292" width="180" height="58" rx="12" class="box data-box"/>
+  <text x="925" y="328" text-anchor="middle" class="box-text">Image Processor</text>
+
+  <rect x="1040" y="292" width="110" height="58" rx="12" class="box external-box"/>
+  <text x="1095" y="328" text-anchor="middle" class="box-text">OpenCV</text>
+
+  <path d="M410 309L525 279" class="arrow"/>
+  <path d="M410 309L525 362" class="arrow"/>
+  <path d="M755 279L835 321" class="arrow"/>
+  <path d="M1015 321H1040" class="arrow"/>
+
+  <rect x="135" y="455" width="930" height="140" rx="36" class="layer domain-layer"/>
+  <text x="95" y="532" text-anchor="end" class="layer-label domain-label">Domain</text>
+
+  <rect x="195" y="496" width="215" height="58" rx="12" class="box domain-box"/>
+  <text x="302.5" y="532" text-anchor="middle" class="box-text">Entity</text>
+
+  <rect x="492" y="496" width="215" height="58" rx="12" class="box domain-box"/>
+  <text x="599.5" y="532" text-anchor="middle" class="box-text">UseCase</text>
+
+  <rect x="790" y="496" width="225" height="58" rx="12" class="box domain-box"/>
+  <text x="902.5" y="532" text-anchor="middle" class="box-text">Repository Protocol</text>
+
+  <path d="M707 525H790" class="arrow"/>
+  <path d="M410 525H492" class="bidirectional"/>
+  <text x="594" y="476" text-anchor="middle" class="small-text">UseCase는 Domain의 Protocol만 바라봅니다</text>
+
+  <path d="M300 338C300 420 902 420 902 496" class="dependency"/>
+  <text x="598" y="435" text-anchor="middle" class="note">Repository Impl conforms to Repository Protocol</text>
+
+  <rect x="135" y="635" width="930" height="145" rx="36" class="layer presentation-layer"/>
+  <text x="95" y="715" text-anchor="end" class="layer-label presentation-label">Presentation</text>
+
+  <rect x="185" y="694" width="190" height="58" rx="12" class="box presentation-box"/>
+  <text x="280" y="730" text-anchor="middle" class="box-text">View</text>
+
+  <rect x="470" y="694" width="220" height="58" rx="12" class="box presentation-box"/>
+  <text x="580" y="730" text-anchor="middle" class="box-text">ViewController</text>
+
+  <rect x="785" y="694" width="210" height="58" rx="12" class="box presentation-box"/>
+  <text x="890" y="730" text-anchor="middle" class="box-text">ViewModel</text>
+
+  <rect x="470" y="625" width="220" height="52" rx="12" class="box presentation-box"/>
+  <text x="580" y="657" text-anchor="middle" class="box-text">AppCoordinator</text>
+
+  <path d="M375 723H470" class="arrow"/>
+  <path d="M690 723H785" class="bidirectional"/>
+  <path d="M580 694V677" class="dependency"/>
+  <path d="M890 694C890 620 600 620 600 554" class="up-flow"/>
+  <text x="755" y="613" class="small-text">execute</text>
+
+  <circle cx="188" cy="170" r="4" fill="#F8FAFC"/>
+  <text x="205" y="175" class="legend">Call flow: View -> ViewController -> ViewModel -> UseCase -> Repository Protocol</text>
+  <circle cx="188" cy="194" r="4" fill="#CBD5E1"/>
+  <text x="205" y="199" class="legend">Dependency: Repository Impl -> Repository Protocol</text>
+
+  <text x="600" y="805" text-anchor="middle" class="legend">response: OpenCV/DataSource -> Repository Impl -> Repository Protocol -> UseCase -> ViewModel -> ViewController -> View</text>
+</svg>
